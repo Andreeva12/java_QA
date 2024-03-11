@@ -3,7 +3,8 @@ package HomeWork2;
 //import java.util.Scanner;
 
 public class Help {
-    public static void main(String args[]) {
+    public static void main(String args[])
+            throws java.io.IOException {
         char choice;
         System.out.println("Cпpaвкa:");
         System.out.println(" 1. if");
@@ -11,7 +12,7 @@ public class Help {
         System.out.print("Bыбepитe: ");
 //        Scanner scan = new Scanner(System.in);
 //        char choice = scan.next().charAt(0);
-
+//        scan.close();
         choice = (char) System.in.read();
         System.out.println("\n");
 
