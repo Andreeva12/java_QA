@@ -9,8 +9,8 @@ public class Tochka {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите числа (если хотите завершить ввод введите (.): ");
         while (true){
-            String input = scan.next();
-            if (input.equals(".")) {
+            ch = scan.next().charAt(0);
+            if (ch == '.') {
                 break;
             } else {
                 space++;
