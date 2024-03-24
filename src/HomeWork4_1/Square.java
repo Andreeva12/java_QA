@@ -1,7 +1,7 @@
 package HomeWork4_1;
 
 public class Square {
-    private int side;
+    private final int side;
 
     public Square(int side) {
         this.side = side;
