@@ -1,4 +1,4 @@
-package HomeWork5_1;
+package HomeWork4_1;
 
 import java.util.Scanner;
 
@@ -11,6 +11,6 @@ public class Method {
 
         Square square = new Square(side);
 
-        System.out.println("Площадь квадрата со стороной " + side + ": " + square.calculateArea());
+        System.out.println("Площадь квадрата со стороной " + side + " равно " + square.calculateArea());
     }
 }

@@ -1,4 +1,4 @@
-package HomeWork5_1;
+package HomeWork4_1;
 
 public class Square {
     private int side;
