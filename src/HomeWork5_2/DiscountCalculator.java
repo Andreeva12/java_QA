@@ -16,7 +16,7 @@ public class DiscountCalculator {
             totalAmount += price;
         }
 
-        System.out.printf("Первоначальная сумма купленных товаров без скидки: %.2f lei\n", totalAmount);
+        System.out.printf("Первоначальная  сумма купленных товаров без скидки: %.2f lei\n", totalAmount);
 
         double discount = 0;
         if (totalAmount > 10000) {
