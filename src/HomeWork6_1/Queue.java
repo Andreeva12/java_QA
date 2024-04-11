@@ -10,6 +10,27 @@ public class Queue {
         putloc = getloc = 0;
     }
 
+    public Queue(char[] name) {
+        q = new char[name.length + 1]; // allocate memory for queue
+        putloc = 0;
+        getloc = 0;
+        for (char ch : name) {
+            put(ch);
+        }
+    }
+
+    // Construct queue from another queue.
+    public Queue(Queue ob) {
+        putloc = ob.putloc;
+        getloc = ob.getloc;
+        q = new char[ob.q.length];
+
+        // Copy elements
+        for (int i = getloc + 1; i <= putloc; i++) {
+            q[i] = ob.q[i];
+        }
+    }
+
     // Put a characer into the queue.
     void put(char ch) {
         if(putloc==q.length-1) {
